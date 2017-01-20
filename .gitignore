@@ -6,6 +6,7 @@
 
 # build files
 dist
+public/js/app
 
 # node files
 node_modules

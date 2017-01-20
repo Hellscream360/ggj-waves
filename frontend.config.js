@@ -18,7 +18,7 @@ module.exports = {
 	},
 	output: {
 		filename: "[name].js",
-		path: path.resolve(__dirname, "dist/frontend"),
+		path: path.resolve(__dirname, "public/js/app"),
 	},
 	resolve: {
 		extensions: [

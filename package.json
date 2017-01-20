@@ -12,7 +12,7 @@
     "build:front": "npm run clean:front && npm run webpack -- --config frontend.config.js",
     "clean": "npm run clean:back && npm run clean:front",
     "clean:back": "rm -Rf dist/backend",
-    "clean:front": "rm -Rf dist/frontend"
+    "clean:front": "rm -Rf public/js/app"
   },
   "repository": {
     "type": "git",
