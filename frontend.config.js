@@ -4,7 +4,9 @@ module.exports = {
 	context: __dirname,
 	devtool: "source-map",
 	entry: "./src/frontend/index.js",
-	externals: {},
+	externals: {
+		"melon": "me",
+	},
 	module: {
 		rules: [{
 			include: [
