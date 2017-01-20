@@ -1,6 +1,9 @@
 # IntelliJ project files
 .idea
 
+# VS Code files
+.vscode
+
 # build files
 dist
 

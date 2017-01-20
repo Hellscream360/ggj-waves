@@ -1,41 +1,41 @@
 {
-  "name": "ggj-waves",
-  "version": "1.0.0",
-  "description": "",
-  "main": "public/index.html",
-  "scripts": {
-    "babel": "node_modules\\.bin\\babel",
-    "tslint": "node_modules\\.bin\\tslint",
-    "webpack": "node_modules\\.bin\\webpack",
-    "build": "npm run build:front && npm run build:back",
-    "build:back": "npm run clean:back && npm run webpack -- --config backend.config.js",
-    "build:front": "npm run clean:front && npm run webpack -- --config frontend.config.js",
-    "clean": "npm run clean:back && npm run clean:front",
-    "clean:back": "rm -Rf dist/backend",
-    "clean:front": "rm -Rf dist/frontend"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://reiwilde@github.com/Hellscream360/ggj-waves.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Hellscream360/ggj-waves/issues"
-  },
-  "homepage": "https://github.com/Hellscream360/ggj-waves#readme",
-  "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-loader": "^6.2.10",
-    "babel-preset-latest": "^6.22.0",
-    "source-map-loader": "^0.1.6",
-    "tslint": "^4.3.1",
-    "typescript": "^2.1.5",
-    "webpack": "^2.2.0"
-  },
-  "babel": {
-    "presets": [
-      "latest"
-    ]
-  }
+	"name": "ggj-waves",
+	"version": "1.0.0",
+	"description": "",
+	"main": "public/index.html",
+	"scripts": {
+		"babel": "node_modules\\.bin\\babel",
+		"tslint": "node_modules\\.bin\\tslint",
+		"webpack": "node_modules\\.bin\\webpack",
+		"build": "npm run build:front && npm run build:back",
+		"build:back": "npm run clean:back && npm run webpack -- --config backend.config.js",
+		"build:front": "npm run clean:front && npm run webpack -- --config frontend.config.js",
+		"clean": "npm run clean:back && npm run clean:front",
+		"clean:back": "rm -Rf dist/backend",
+		"clean:front": "rm -Rf dist/frontend"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://reiwilde@github.com/Hellscream360/ggj-waves.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Hellscream360/ggj-waves/issues"
+	},
+	"homepage": "https://github.com/Hellscream360/ggj-waves#readme",
+	"devDependencies": {
+		"babel-cli": "^6.22.2",
+		"babel-loader": "^6.2.10",
+		"babel-preset-latest": "^6.22.0",
+		"source-map-loader": "^0.1.6",
+		"tslint": "^4.3.1",
+		"typescript": "^2.1.5",
+		"webpack": "^2.2.0"
+	},
+	"babel": {
+		"presets": [
+			"latest"
+		]
+	}
 }
