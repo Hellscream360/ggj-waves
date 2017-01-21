@@ -10,3 +10,6 @@ public/js/app
 
 # node files
 node_modules
+
+# npm files
+npm-debug.log
