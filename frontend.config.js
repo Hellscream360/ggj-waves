@@ -3,7 +3,12 @@ const path = require("path");
 module.exports = {
 	context: __dirname,
 	devtool: "source-map",
-	entry: "./src/frontend/index.js",
+	entry: {
+		main: [
+			"babel-polyfill",
+			"./src/frontend/index.js",
+		]
+	},
 	externals: {
 		phaser: "Phaser",
 	},
