@@ -1,3 +1,5 @@
-import me from "melon";
+import setup from "./setup";
 
-console.log(me);
+window.onReady(() => {
+	setup.init();
+});
