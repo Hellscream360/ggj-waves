@@ -45,7 +45,10 @@ const serve = async (ctx) => {
 			contentType = "application/json";
 			break;
 		case ".png":
-			contentType = "image/png"
+			contentType = "image/png";
+			break;
+		case ".tmx":
+			contentType = "application/xml";
 			break;
 	}
 

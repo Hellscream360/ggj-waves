@@ -32,15 +32,14 @@
     "webpack": "^2.2.0"
   },
   "babel": {
-    "plugins": [
-
-    ],
+    "plugins": [],
     "presets": [
       "latest"
     ]
   },
   "dependencies": {
     "koa": "^2.0.0-alpha.7",
-    "koa-router": "^7.1.0"
+    "koa-router": "^7.1.0",
+    "phaser": "^2.6.2"
   }
 }
