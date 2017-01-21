@@ -3,8 +3,12 @@ const path = require("path");
 module.exports = {
 	context: __dirname,
 	devtool: "source-map",
-	entry: "./src/backend/index.js",
-	externals: {},
+	entry: {
+		main: [
+			"babel-polyfill",
+			"./src/backend/index.js"
+		]
+	},
 	module: {
 		rules: [{
 			include: [
@@ -18,7 +22,7 @@ module.exports = {
 	},
 	output: {
 		filename: "[name].js",
-		path: path.resolve(__dirname, "dist/backend"),
+		path: path.resolve(__dirname, "dist"),
 	},
 	resolve: {
 		extensions: [
@@ -26,4 +30,5 @@ module.exports = {
 			".jsx",
 		],
 	},
+	target: "node",
 };
