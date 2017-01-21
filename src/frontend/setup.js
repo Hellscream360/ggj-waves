@@ -1,10 +1,10 @@
 import me from "melon";
 import resources from "./resources";
+import PlayScreen from "./screens/play";
 
 export default {
 	init: function () {
 		me.video.init(640, 480, {
-			renderer: me.video.WEBGL,
 			wrapper: "app",
 		});
 
@@ -16,7 +16,8 @@ export default {
 
 	loader: {
 		onLoad: () => {
-			console.log("fuck"); // debug
+			me.state.set(me.state.PLAY, new PlayScreen());
+			me.state.change(me.state.PLAY);
 		}
 	}
 };

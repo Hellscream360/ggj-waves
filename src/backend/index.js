@@ -32,11 +32,20 @@ const serve = async (ctx) => {
 	const ext = path.extname(file);
 
 	switch (ext) {
+		case ".html":
+			contentType = "text/html";
+			break;
+		case ".jpg":
+			contentType = "image/jpg";
+			break;
 		case ".js":
 			contentType = "application/javascript";
 			break;
-		case ".html":
-			contentType = "text/html";
+		case ".json":
+			contentType = "application/json";
+			break;
+		case ".png":
+			contentType = "image/png"
 			break;
 	}
 
@@ -45,6 +54,7 @@ const serve = async (ctx) => {
 };
 
 router.get("/", serve);
+router.get(/^\/assets(?:\/|$)/, serve);
 router.get(/^\/js(?:\/|$)/, serve);
 
 app.use(router.routes());
