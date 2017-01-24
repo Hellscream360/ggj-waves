@@ -18,6 +18,7 @@ const preload = () => {
 const create = () => {
 	const state = store.state;
 
+	game.time.advancedTiming = true;
 	game.world.setBounds(0, 0, 64 * 100, 600);
 
 	// Input
@@ -67,8 +68,13 @@ const update = () => {
 	player.animations.play("right");
 };
 
+const render = () => {
+	game.debug.text(game.time.fps, 2, 14, "#00ff00");
+};
+
 export default {
-	preload: preload,
 	create: create,
+	preload: preload,
+	render: render,
 	update: update,
 }
